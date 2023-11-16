@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Marshall Portofolio Website</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/bcc06fe9ac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+	<div class="container">
+		<nav>
+			<img src="images/logo.png" class="logo">
+			<ul id="sidemenu">
+				<li><a href="#header">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#portofolio">Portofolio</a></li>
+				<li><a href="#contact">Contact</a></li
+			</ul> 
+		</nav>
+		<div class="header-text">
+			<p>Game Developer</p>
+			<h1>Hi, I'm Marshall<br></h1>
+		</div>
+	</div>
+</div>
+<!----------about---------->
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="about-col-1">
+				<img src="images/user.png">
+			</div>
+			<div class="about-col-2">
+				<h1 class="sub-title">About Me</h1>
+				<p>Seorang pelajar kelas XI SMKN 11 Semarang Jurusan Pembuatan GIM, yang
+				mendedikasikan waktunya untuk belajar mendesain dan membuat gim, mempunyai
+				pengalaman dalam Unity Game Engine, Software Blender, Adobe Illustrator, dan
+				Adobe Photoshop. Memiliki passion untuk menjadi Game dan Software Developer.</p>	
+
+				<div class="tab-titles">
+					<p class="tab-links active-link" onclick="opentab('skills')">Skills & Experience</p>
+					<p class="tab-links" onclick="opentab('education')">Education</p>
+				</div>
+				<div class="tab-contents active-tab" id="skills">
+					<ul>
+						<li><span>Unity Engine</span><br>Designing interfaces</li>
+						<li><span>Blender</span><br>3D Modeling</li>
+						<li><span>Adobe Illustrator & Photoshop</span><br>Interface Design</li>
+					</ul>
+				</div>
+				<div class="tab-contents" id="education">
+					<ul>
+						<li><span>2022 - Saat Ini</span><br>SMKN 11 Semarang</li>
+						<li><span>2019 – 2021</span><br>SMPN 12 Semarang</li>
+						<li><span>2011 – 2019</span><br>Paud, TK, SD Islam Pangeran Diponegoro</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!----------Portofolio---------->
+<div id="portofolio">
+	<div class="container">
+		<h1 class="sub-title">My Work</h1>
+		<div class="work-list">
+			<div class="work">
+				<img src="images/work-1.png">
+				<div class="layer">
+					<h3>Overcharged(Still In Development)</h3>
+					<p></p>
+					<a href="https://drive.google.com/drive/folders/14g55kMH9_NkETNJonrcc9TvBfyKWjT6D"><i class="fa-solid fa-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="images/work-2.png">
+				<div class="layer">
+					<h3>Shadowbane(Still In Development)</h3>
+					<p></p>
+					<a href="https://drive.google.com/file/d/1JuJ2ie2r5ZRGcvDSA1m53AIodc51J64c/view?usp=drive_link"><i class="fa-solid fa-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="images/work-3.png">
+				<div class="layer">
+					<h3>Star Balls</h3>
+					<p></p>
+					<a href="https://drive.google.com/file/d/1JZLPNdfdJN5h5yub9YEIwE1uTTjVyISQ/view?usp=drive_link"><i class="fa-solid fa-up-right-from-square"></i></a>
+				</div>
+			</div>
+		</div>
+<!--
+		<a href="#" class="btn">See More</a>
+-->
+	</div>
+</div>
+<!----------Contacts----------
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+				<h1 class="sub-title">Contact Me</h1>
+				<p><i class="fa-solid fa-paper-plane"></i> marshalltaufiq123@gmail.com</p>
+				<p><i class="fa-brands fa-whatsapp"></i> 0857-0182-8766</p>
+				<div class="social-icons">
+<!---
+					<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+					<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>Copyright Ⓒ Marshall.
+	</div>
+</div>
+
+<script>
+
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+
+</script>
+
+<script>
+
+	var sidemeu = document.getElementById("sidemenu");
+
+	function openmenu(){
+		sidemeu.style.right = "0";
+	}
+	function closemenu(){
+		sidemu.style.right = "-200px";
+	}
+</script>
+
+</body>
+</html>
